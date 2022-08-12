@@ -1,0 +1,15 @@
+int subtractProductAndSum(int n)
+{
+    {
+        int res=0,p=1,sum=0,r;
+        while(n!=0)
+        {
+            r=n%10;
+            n=n/10;
+            p=p*r;
+            sum=sum+r;
+        }
+        res=p-sum;
+        return res;
+    }
+}
